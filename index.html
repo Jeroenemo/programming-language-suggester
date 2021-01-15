@@ -8,19 +8,24 @@
   <title>P.L.S.</title>
 </head>
 <body>
-  <div class="page-header">
-    <h1>Programming Language Suggester</h1>
-    <h4>A fast and totally accurate psychological evaluation to discover what language is right for you!</h4>
+  <div class="container">
+    <div class="jumbotron">
+      <div class="header">
+        <h1>Programming Language Suggester</h1>
+        <h4>A fast and totally accurate psychological evaluation to discover what language is right for you!</h4>
+      </div>
+    </div>
   </div>
   <div class="container">
     <div class="jumbotron">
       <form id="survey">
+        <h2 class="header">Choose from the following:</h2>
         <div class="row">
           <div class="col-md-4">
             <div class="card">
               <div class="card-body">
                 <div class="radio">
-                  <h3 class="card-title">Choose your Beverage:</h3>
+                  <h3 class="card-title">Beverage:</h3>
                   <label>
                     <input type="radio" name="beverage" value="js" checked>
                     Coffee
@@ -45,7 +50,7 @@
             <div class="card">
               <div class="card-body">
                 <div class="radio">
-                  <h3 class="card-title">Choose your Super Hero:</h3>
+                  <h3 class="card-title">Super Hero:</h3>
                   <label>
                     <input type="radio" name="superhero" value="cs" checked>
                     Hawk Eye
@@ -70,7 +75,7 @@
             <div class="card">  
               <div class="card-body">
                 <div class="radio">
-                  <h3 class="card-title">Choose your Getaway Vehicle:</h3>
+                  <h3 class="card-title">Getaway Vehicle:</h3>
                   <label>
                     <input type="radio" name="car" value="cs" checked>
                     A nice station wagon
@@ -97,7 +102,7 @@
             <div class="card">
               <div class="card-body">
                 <div class="radio">
-                  <h3 class="card-title">Choose your Pokemon:</h3>
+                  <h3 class="card-title">Pokemon:</h3>
                   <label>
                     <input type="radio" name="pokemon" value="js" checked>
                     Weedle
@@ -122,7 +127,7 @@
             <div class="card">
               <div class="card-body">
                 <div class="radio">
-                  <h3 class="card-title">Choose your Weapon:</h3>
+                  <h3 class="card-title">Weapon:</h3>
                   <label>
                     <input type="radio" name="weapon" value="cs" checked>
                     A laser strapped to a donkey
@@ -145,9 +150,9 @@
           </div>
         </div>
         <button type="submit" class="btn">Go!</button>
+        <div id="output">
+        </div>
       </form>
-    </div>
-    <div id="output">
     </div>
   </div>
 </body>

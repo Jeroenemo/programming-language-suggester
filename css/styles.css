@@ -1,0 +1,22 @@
+body {
+  background-color:black;
+  margin: 30px;
+}
+
+.header {
+  text-align: center;
+}
+
+.jumbotron{
+  width: auto;
+}
+
+.row{
+  justify-content: center;
+}
+
+.card {
+  width: 310px;
+  height: 200px;
+  margin: 5px;
+}
