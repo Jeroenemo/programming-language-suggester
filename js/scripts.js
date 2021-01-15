@@ -31,16 +31,17 @@ $(document).ready(function() {
 
     let result;
       if (pyPoints > jsPoints && pyPoints > csPoints) {
+        $("#python").show();
       } else if (jsPoints > pyPoints && jsPoints > csPoints) {
-        result = "javascript"
+        $("#javascript").show();
       } else if (csPoints > jsPoints && csPoints > pyPoints) {
-        result = "CS"
+        $("#cs").show();
       } else if (pyPoints === jsPoints) {
-        result = "tie between py and js"
+        $("#python-javascript").show();
       } else if (pyPoints === csPoints) {
-        result = "tie between py and cs"
+        $("#python-cs").show();
       } else if (jsPoints === csPoints){
-        result = "tie between cs and js"
+        $("#javascript-cs").show();
       } else {
         result = "something went wrong. "
       }
