@@ -36,11 +36,11 @@ $(document).ready(function() {
     } else if (csPoints > jsPoints && csPoints > pyPoints) {
       $("#output").text("You should study C#!");
     } else if (pyPoints === jsPoints) {
-      $("#output").text("You should study Python and JavaScript!");
+      $("#output").text("It's a tie between Python and JavaScript!");
     } else if (pyPoints === csPoints) {
-      $("#output").text("You should study Python and C#!");
+      $("#output").text("It's a tie between Python and C#!");
     } else if (jsPoints === csPoints){
-      $("#output").text("You should study JavaScript and C#!");
+      $("#output").text("It's a tie between JavaScript and C#!");
     }
     pyPoints = 0;
     jsPoints = 0;
