@@ -22,14 +22,13 @@ $(document).ready(function() {
     const car = $("input:radio[name=car]:checked").val();
     const pokemon = $("input:radio[name=pokemon]:checked").val();
     const weapon = $("input:radio[name=weapon]:checked").val();
-  
+    
     determinePoints(beverage);
     determinePoints(superHero);
     determinePoints(car);
     determinePoints(pokemon);
     determinePoints(weapon);
 
-    
     if (pyPoints > jsPoints && pyPoints > csPoints) {
       $("#output").text("You should study Python!");
     } else if (jsPoints > pyPoints && jsPoints > csPoints) {
@@ -43,6 +42,9 @@ $(document).ready(function() {
     } else if (jsPoints === csPoints){
       $("#output").text("You should study JavaScript and C#!");
     }
+    pyPoints = 0;
+    jsPoints = 0;
+    csPoints = 0;
   });
 });
 
