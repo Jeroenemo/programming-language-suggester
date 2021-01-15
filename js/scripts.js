@@ -29,25 +29,20 @@ $(document).ready(function() {
     determinePoints(pokemon);
     determinePoints(weapon);
 
-    let result;
-      if (pyPoints > jsPoints && pyPoints > csPoints) {
-        $("#python").show();
-      } else if (jsPoints > pyPoints && jsPoints > csPoints) {
-        $("#javascript").show();
-      } else if (csPoints > jsPoints && csPoints > pyPoints) {
-        $("#cs").show();
-      } else if (pyPoints === jsPoints) {
-        $("#python-javascript").show();
-      } else if (pyPoints === csPoints) {
-        $("#python-cs").show();
-      } else if (jsPoints === csPoints){
-        $("#javascript-cs").show();
-      } else {
-        result = "something went wrong. "
-      }
-      console.log(result)
-      $("#output").text(result);
-
+    
+    if (pyPoints > jsPoints && pyPoints > csPoints) {
+      $("#python").show();
+    } else if (jsPoints > pyPoints && jsPoints > csPoints) {
+      $("#javascript").show();
+    } else if (csPoints > jsPoints && csPoints > pyPoints) {
+      $("#cs").show();
+    } else if (pyPoints === jsPoints) {
+      $("#python-javascript").show();
+    } else if (pyPoints === csPoints) {
+      $("#python-cs").show();
+    } else if (jsPoints === csPoints){
+      $("#javascript-cs").show();
+    }
   });
 });
 
