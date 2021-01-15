@@ -31,13 +31,18 @@ $(document).ready(function() {
 
     let result;
       if (pyPoints > jsPoints && pyPoints > csPoints) {
-        result = "python"
       } else if (jsPoints > pyPoints && jsPoints > csPoints) {
         result = "javascript"
       } else if (csPoints > jsPoints && csPoints > pyPoints) {
         result = "CS"
+      } else if (pyPoints === jsPoints) {
+        result = "tie between py and js"
+      } else if (pyPoints === csPoints) {
+        result = "tie between py and cs"
+      } else if (jsPoints === csPoints){
+        result = "tie between cs and js"
       } else {
-        result = "tie"
+        result = "something went wrong. "
       }
       console.log(result)
       $("#output").text(result);
