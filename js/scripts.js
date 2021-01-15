@@ -31,17 +31,17 @@ $(document).ready(function() {
 
     
     if (pyPoints > jsPoints && pyPoints > csPoints) {
-      $("#python").show();
+      $("#output").text("You should study Python!");
     } else if (jsPoints > pyPoints && jsPoints > csPoints) {
-      $("#javascript").show();
+      $("#output").text("You should study JavaScript!");
     } else if (csPoints > jsPoints && csPoints > pyPoints) {
-      $("#cs").show();
+      $("#output").text("You should study C#!");
     } else if (pyPoints === jsPoints) {
-      $("#python-javascript").show();
+      $("#output").text("You should study Python and JavaScript!");
     } else if (pyPoints === csPoints) {
-      $("#python-cs").show();
+      $("#output").text("You should study Python and C#!");
     } else if (jsPoints === csPoints){
-      $("#javascript-cs").show();
+      $("#output").text("You should study JavaScript and C#!");
     }
   });
 });
