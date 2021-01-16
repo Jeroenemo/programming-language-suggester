@@ -14,7 +14,7 @@
 
 ## Description
 
-This is a very simple and very not serious survey web page to discover what programming language is right for you, based on silly criteria. This page was created with the guidance of **EPICODUS**, the greatest coding bootcamp in the known universe, and google. You can visit the page [here](https://jeroenemo.github.io/programming-language-suggester)
+This is a very simple and very not serious survey web page to discover what programming language is right for you, based on silly criteria. This page was created with the guidance of **EPICODUS**, the greatest coding bootcamp in the known universe, and google. You can visit the page [here](https://jeroenemo.github.io/programming-language-suggester/index)
 
 
 
