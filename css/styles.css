@@ -1,23 +1,18 @@
 body {
-
   margin: 30px;
 }
 
 .header, #output{
   text-align: center;
   font-family: 'Potta One', cursive;
-  padding: 1%;
-
- 
 }
-
 
 .row{
   justify-content: center;
 }
 
 .card {
-  margin: 2%;
+  margin: 3%;
 }
 
 .btn {
@@ -28,18 +23,11 @@ body {
   text-align: center;
   text-decoration: none;
   font-size: 16px;
-  margin: 0 auto;
+  margin: 2% auto;
   display: block;
-
-
 }
 
-
 #output {
- 
   font-size: 30px;
   font-weight: bolder;
- 
- 
-
 }
