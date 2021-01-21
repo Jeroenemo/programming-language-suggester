@@ -12,8 +12,6 @@ function determinePoints(surveyValue) {
   }
 };
 
-
-
 $(document).ready(function() {
   $("form#survey").submit(function(event) {
     event.preventDefault();
@@ -39,7 +37,7 @@ $(document).ready(function() {
       $("#output").text("It's a tie between Python and JavaScript!");
     } else if (pyPoints === csPoints) {
       $("#output").text("It's a tie between Python and C#!");
-    } else if (jsPoints === csPoints){
+    } else if (jsPoints === csPoints) {
       $("#output").text("It's a tie between JavaScript and C#!");
     }
     pyPoints = 0;
