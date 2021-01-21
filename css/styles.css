@@ -27,7 +27,15 @@ body {
   font-size: 16px;
   margin: 2% auto;
   display: block;
+  cursor: pointer;
+  transition: background-color 0.1s ease-in-out;
 }
+
+.btn:hover {
+  background-color:#59dc5d;
+  }
+
+
 
 #output {
   font-size: 30px;
