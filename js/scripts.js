@@ -21,7 +21,11 @@ $(document).ready(function() {
     const pokemon = $("input:radio[name=pokemon]:checked").val();
     const weapon = $("input:radio[name=weapon]:checked").val();
     
-    determinePoints(beverage, superHero, car, pokemon, weapon);
+    determinePoints(beverage);
+    determinePoints(superHero);
+    determinePoints(car);
+    determinePoints(pokemon);
+    determinePoints(weapon);
 
     if (pyPoints > jsPoints && pyPoints > csPoints) {
       $("#output").text("You should study Python!");
